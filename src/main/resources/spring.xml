@@ -5,7 +5,7 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
 
-    <bean id="s1" class="org.yash.domain.Student" scope="prototype" autowire="byName">
+    <bean id="s1" class="org.yash.domain.Student" scope="prototype" autowire="byType">
         <property name="id" value="121"/>
         <property name="name" value="gaurav"/>
 
@@ -17,22 +17,22 @@
         <constructor-arg value="Indore"/>
     </bean>-->
 
-    <bean id="address" class="org.yash.domain.Address" >
+    <!--<bean id="address" class="org.yash.domain.Address" >
         <property name="city" value="Pune"/>
         <property name="country" value="India"/>
-    </bean>
-<!--
+    </bean>-->
+
 
     <bean id="address1" class="org.yash.domain.Address" >
         <property name="city" value="Pune1"/>
         <property name="country" value="India1"/>
     </bean>
 
-    <bean id="address2" class="org.yash.domain.Address" >
-        <property name="city" value="Pune2"/>
-        <property name="country" value="India2"/>
-    </bean>
--->
+    <!-- <bean id="address2" class="org.yash.domain.Address" >
+         <property name="city" value="Pune2"/>
+         <property name="country" value="India2"/>
+     </bean>
+ -->
 
 
 </beans>
