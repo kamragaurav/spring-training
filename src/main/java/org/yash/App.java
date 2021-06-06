@@ -24,7 +24,7 @@ public class App
        //  Student student = (Student) beanFactory.getBean("s1"); */
 
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("spring.xml");
-        Student student = (Student) applicationContext.getBean("s2");
+        Student student = (Student) applicationContext.getBean("s1");
         System.out.println(student);
         /*Student student = (Student) applicationContext.getBean("s1");
         Student student1 = (Student) applicationContext.getBean("s1");

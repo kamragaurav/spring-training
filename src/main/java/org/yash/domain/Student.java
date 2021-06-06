@@ -1,9 +1,20 @@
 package org.yash.domain;
 
+import java.util.List;
+
 public class Student {
     private int id;
     private String name;
-    private Address address;
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
+    }
+
+    Address address;
 
     public int getId() {
         return id;
@@ -21,6 +32,8 @@ public class Student {
         this.name = name;
     }
 
+
+
     @Override
     public String toString() {
         return "Student{" +
@@ -29,14 +42,4 @@ public class Student {
                 ", address=" + address +
                 '}';
     }
-
-    public Address getAddress() {
-        return address;
-    }
-
-    public void setAddress(Address address) {
-        this.address = address;
-    }
-
-
 }
